@@ -190,7 +190,7 @@ const unfundedgamesamt = listOfUnfundedGames.length;
             */
 //`${unfundedgamesamt === 0 ? "All games are funded" : `There are ${unfundedgamesamt} unfunded games.`}`; 
 
-let unfundedgamesstr = `A total of $${totalRaised} has been raised for ${totalGames} games. Currently, ${unfundedgamesamt} ${unfundedgamesamt ===  1 ? "game remains unfunded. We need your help to fund this amazing game!" : "games remains unfunded. We need your help to fund these amazing games!"}`;
+let unfundedgamesstr = `A total of $${totalRaised.toLocaleString()} has been raised for ${totalGames} games. Currently, ${unfundedgamesamt} ${unfundedgamesamt ===  1 ? "game remains unfunded. We need your help to fund this amazing game!" : "games remain unfunded. We need your help to fund these amazing games!"}`;
 // create a new DOM element containing the template string and append it to the description container
 const unfundedCard = document.createElement("div");
 unfundedCard.innerHTML = `
