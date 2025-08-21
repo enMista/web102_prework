@@ -41,7 +41,7 @@ function addGamesToPage(games) {
             <p>
                 ${games[i].name}<br>
                 ${games[i].description}<br>
-                Pledged: ${games[i].pledged}
+                Pledged: ${games[i].pledged.toLocaleString()}
             </p>
         `;
 
@@ -218,3 +218,5 @@ const runnerUpCard = document.createElement("div");
 runnerUpCard.innerHTML = `
     <p>${runnerUp.name}</p>
 `;
+
+secondGameContainer.appendChild(runnerUpCard);
