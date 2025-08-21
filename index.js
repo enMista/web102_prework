@@ -194,8 +194,8 @@ let unfundedgamesstr = `A total of $${totalRaised} has been raised for ${totalGa
 // create a new DOM element containing the template string and append it to the description container
 const unfundedCard = document.createElement("div");
 unfundedCard.innerHTML = `
-    <p>${unfundedgamesstr}
-`
+    <p>${unfundedgamesstr}</p>
+`; 
 
 descriptionContainer.appendChild(unfundedCard); 
 /************************************************************************************
