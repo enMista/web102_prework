@@ -82,7 +82,9 @@ const totalContributions = GAMES_JSON.reduce((prev, next) => {
 }, 0);
 
 // set the inner HTML using a template literal and toLocaleString to get a number with commas
-
+contributionsCard.innerHTML = `
+ <p>${totalContributions.toLocaleString()}</p>
+`
 
 // grab the amount raised card, then use reduce() to find the total amount raised
 const raisedCard = document.getElementById("total-raised");
