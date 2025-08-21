@@ -55,6 +55,7 @@ function addGamesToPage(games) {
 
         // append the game to the games-container
         gamesContainer.appendChild(gameCard); 
+    } 
 }
 
 // call the function we just defined using the correct variable
@@ -72,7 +73,9 @@ addGamesToPage(GAMES_JSON);
 const contributionsCard = document.getElementById("num-contributions");
 
 // use reduce() to count the number of total contributions by summing the backers
-
+const totalContributions = GAMES_JSON.reduce((prev, next) => {
+    return prev + next.backers; 
+}, 0);
 
 // set the inner HTML using a template literal and toLocaleString to get a number with commas
 
