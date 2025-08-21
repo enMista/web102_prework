@@ -90,7 +90,7 @@ contributionsCard.innerHTML = `
 const raisedCard = document.getElementById("total-raised");
 
 const totalRaised = GAMES_JSON.reduce((prev, next) => { //use reduce function on raised
-    return prev + next.raised; 
+    return prev + next.pledged; 
 }, 0);
 
 // set inner HTML using template literal
