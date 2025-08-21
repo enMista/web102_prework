@@ -192,10 +192,12 @@ const unfundedgamesamt = listOfUnfundedGames.length;
 
 let unfundedgamesstr = `A total of $${totalRaised} has been raised for ${totalGames} games. Currently, ${unfundedgamesamt} ${unfundedgamesamt ===  1 ? "game remains unfunded. We need your help to fund this amazing game!" : "games remains unfunded. We need your help to fund these amazing games!"}`;
 // create a new DOM element containing the template string and append it to the description container
-const unfundedElement = document.createElement("p");
-unfundedElement.innerHTML = unfundedgamesstr; 
+const unfundedCard = document.createElement("div");
+unfundedCard.innerHTML = `
+    <p>${unfundedgamesstr}
+`
 
-descriptionContainer.appendChild(unfundedElement); 
+descriptionContainer.appendChild(unfundedCard); 
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
  * Skills used: spread operator, destructuring, template literals, sort 
