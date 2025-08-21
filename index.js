@@ -95,19 +95,17 @@ const totalRaised = GAMES_JSON.reduce((prev, next) => { //use reduce function on
 
 // set inner HTML using template literal
 raisedCard.innerHTML = `
-<p>${totalRaised.toLocaleString()}</p>
+<p>$${totalRaised.toLocaleString()}</p>
 `
 
 // grab number of games card and set its inner HTML
 const gamesCard = document.getElementById("num-games");
 
-const totalGames = GAMES_JSON.reduce((prev, next) => { //reduce total num games
-    return prev + next;
-}, 0);
+const totalGames = GAMES_JSON.length; 
 
 //innerHTML set
 gamesCard.innerHTML = ` 
-<p>${totalGames.toLocaleString()}</p>
+<p>${totalGames}</p>
 `
 
 
