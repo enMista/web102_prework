@@ -41,7 +41,7 @@ function addGamesToPage(games) {
             <p>
                 ${games[i].name}<br>
                 ${games[i].description}<br>
-                Pledged: = ${games[i].pledged}
+                Pledged: ${games[i].pledged}
             </p>
         `;
 
