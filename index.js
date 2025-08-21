@@ -35,7 +35,11 @@ function addGamesToPage(games) {
 
         // add the class game-card to the list
         gameCard.classList.add("game-card");
-        games.img.classList.add("game-img");
+
+        const img = document.createElement("img"); 
+        img.src = games[i].img; 
+        img.alt = games[i].name; 
+        img.classList.add("game-img");
 
 
         // set the inner HTML using a template literal to display some info 
