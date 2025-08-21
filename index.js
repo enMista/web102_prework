@@ -181,16 +181,8 @@ const unfundedgamesamt = listOfUnfundedGames.length;
 
 
 // create a string that explains the number of unfunded games using the ternary operator
-            /* 
-            if unfundedgamesamt === 0) {
-                unfundedgamesstr = "All games are funded!"
-            } else {
-                unfundedgamesstr = `There are ${unfundedgamesamt} unfunded games.`
-            }
-            */
-//`${unfundedgamesamt === 0 ? "All games are funded" : `There are ${unfundedgamesamt} unfunded games.`}`; 
-
 let unfundedgamesstr = `A total of $${totalRaised.toLocaleString()} has been raised for ${totalGames} games. Currently, ${unfundedgamesamt} ${unfundedgamesamt ===  1 ? "game remains unfunded. We need your help to fund this amazing game!" : "games remain unfunded. We need your help to fund these amazing games!"}`;
+
 // create a new DOM element containing the template string and append it to the description container
 const unfundedCard = document.createElement("div");
 unfundedCard.innerHTML = `
@@ -211,7 +203,18 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+const [topGame, runnerUp] = sortedGames; 
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const topGameCard = document.createElement("div");
+topGameCard.innerHTML = `
+    <p>${topGame.name}</p>
+`; 
+
+firstGameContainer.appendChild(topGameCard);
 
 // do the same for the runner up item
+const runnerUpCard = document.createElement("div");
+runnerUpCard.innerHTML = `
+    <p>${runnerUp.name}</p>
+`;
