@@ -211,7 +211,7 @@ topGameCard.innerHTML = `
     <p>${topGame.name}</p>
 `; 
 
-const topGameCardimg = document.createEleemnt("img");
+const topGameCardimg = document.createEleemnt("img"); //create an image under and in the card 
 topGameCardimg.src = topGame.img; 
 topGameCardimg.alt = topGame.name; 
 topGameCardimg.classList.add("game-img");
@@ -225,8 +225,9 @@ runnerUpCard.innerHTML = `
     <p>${runnerUp.name}</p>
 `;
 
-const runnerUpimg = document.createElement("img");
-runnerUpimg.src, runnerUpimg.alt = runnerUp.img, runnerUp.alt; 
+const runnerUpimg = document.createElement("img"); //create an image under and in the card
+runnerUpimg.src = runnerUp.img; 
+runnerUpimg.alt = runnerUp.alt; 
 runnerUpimg.classList.add("game-img"); 
 
 runnerUp.appendChild(runnerUpimg); 
