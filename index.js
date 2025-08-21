@@ -211,6 +211,12 @@ topGameCard.innerHTML = `
     <p>${topGame.name}</p>
 `; 
 
+const topGameCardimg = document.createEleemnt("img");
+topGameCardimg.src = topGame.img; 
+topGameCardimg.alt = topGame.name; 
+topGameCardimg.classList.add("game-img");
+
+topGameCard.appendChild(topGameCardimg);
 firstGameContainer.appendChild(topGameCard);
 
 // do the same for the runner up item
@@ -219,4 +225,9 @@ runnerUpCard.innerHTML = `
     <p>${runnerUp.name}</p>
 `;
 
+const runnerUpimg = document.createElement("img");
+runnerUpimg.src, runnerUpimg.alt = runnerUp.img, runnerUp.alt; 
+runnerUpimg.classList.add("game-img"); 
+
+runnerUp.appendChild(runnerUpimg); 
 secondGameContainer.appendChild(runnerUpCard);
