@@ -36,23 +36,23 @@ function addGamesToPage(games) {
         // add the class game-card to the list
         gameCard.classList.add("game-card");
 
-        const img = document.createElement("img"); // you have to create the img elements. 
-        img.src = games[i].img; 
-        img.alt = games[i].name; 
-        img.classList.add("game-img");
-
-        gameCard.appendChild(img); // append the image to the gameCard so the div is wrapping the image. 
-
         // set the inner HTML using a template literal to display some info 
         gameCard.innerHTML = `
         <p>
         ${games[i].name}<br>
         ${games[i].description}<br>
         Pledged: = ${games[i].pledged}<br>
-        ${games[i].img}
         </p>
         <img src = ${games[i].img} alt = ${games[i].name}/>
         `;
+
+        const img = document.createElement("img"); // you have to create the img elements. 
+        img.src = games[i].img; 
+        img.alt = games[i].name; 
+        img.classList.add("game-img");
+
+        gameCard.appendChild(img); // append the image to the gameCard so the div is wrapping the image. 
+        
         // about each game
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
