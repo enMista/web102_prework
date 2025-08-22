@@ -23,7 +23,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<video width = '800' height = '600' src='https://www.youtube.com/watch?v=av_G2UDNYdU' title='Video Walkthrough' width='' alt='Video Walkthrough' /video>
+[![Video Walkthrough](https://img.youtube.com/vi/av_G2UDNYdU/0.jpg)](https://www.youtube.com/watch?v=av_G2UDNYdU)
 
 Video created with https://www.screen-recorder.com
 
