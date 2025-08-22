@@ -1,10 +1,10 @@
-# WEB102 Prework - *Name of App Here*
+# WEB102 Prework - *Sea Monster Crowdfunding*
 
-Submitted by: **Your Name Here**
+Submitted by: **Bolarinwa Ayoola**
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**Sea Monster Crowdfunding** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **X** hours spent in total
+Time spent: **~12** hours spent in total
 
 ## Required Features
 
@@ -17,16 +17,16 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [ ] The most funded game and runner up now include pictures under the title for increased visibility and user interaction. 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://www.youtube.com/watch?v=av_G2UDNYdU' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+Video created with https://www.screen-recorder.com
+
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -35,6 +35,10 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+I had issues with typos, specifically with making the images display, but I did not know I had accidentally typed "it" somewhere in the games.js file and it was preventing the export from working properly. 
+
+Understanding the reduce function was difficult, I honestly just went with the flow. 
+Besides that, the document PDFs helped and doing the previous challenges built the necessary skills for the later challenges, so it got easier as I went on. 
 
 ## License
 
